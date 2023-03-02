@@ -105,6 +105,10 @@ subset(airquality, !is.na(Ozone) & Day %in% c(1,2)) # OzoneがNAでない、か�
 subset(airquality, Ozone > 100 | Temp > 95) # オゾンが100以上、または気温が95以上
 subset(airquality, Day==1, select = -Temp) # Dayが1で、Temp列以外
 
+# 課題
 
+subset(airquality, Month == 7,  Ozone)
+subset(airquality, !is.na(Solar.R), c(Month, Day))
+subset(airquality, Wind >= 10 & Temp >= 80)
 
 
