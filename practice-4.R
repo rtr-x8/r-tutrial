@@ -136,4 +136,5 @@ legend(4, #x座標
        legend = c(expression(e^{-x}*cos(x)), expression(e^{-x}*sin(x))),
        lty=c(1,2), lwd = 2, col=c("red", "blue"),
        bty="n", # 凡例の枠線
-       y.intersp = 2 #凡例の間)
+       y.intersp = 1.5 #凡例の間
+       )
