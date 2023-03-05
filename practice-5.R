@@ -87,4 +87,10 @@ pairs(kikou[,-c(1,2)], col="blue")
 pairs(~気温 + 日射量 + 風速, # 絞って表示
       data = kikou,col=rainbow(12)[kikou$月]) # 色を月毎に
 
-
+# 3次元グラフ
+f <- function(x,y) x^2 - y^2
+x <- seq(-3,3,length=51)
+y <- seq(-3,3,length=51)
+z <- outer(x,y,f) # 外積を計算する
+persp(x,y,z,col="lightblue")
+persp(x,y,z,theta=30,phi=30,expand=0.5,col="royalblue",main=expression(z=x^2-y^2))
