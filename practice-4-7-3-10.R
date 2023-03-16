@@ -42,3 +42,5 @@ subset(airquality, Ozone > 120 | Temp >= 95)# Ozoneが120より大きく、気�
 subset(airquality, Day == 1, select = -Temp) # 日付が1のもので、気温以外のカラム
 
 
+
+

@@ -24,3 +24,4 @@ op0 <- par(mflow=c(1,2))
 plot(kikou[,3:4])
 op <- par(mar=c(9,2,1,6)) # default: c(5,4,4,2)+_ 0.1 下、左、上、右
 plot(kikou[,3:4])
+?par
